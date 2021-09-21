@@ -33,6 +33,13 @@ does_attendance not null or if only lunch modify for 0, only
 ![screenshot](reportAbsenceB.png)
 
 
+Teachers when taking attendance find the student marked with information already. Goal, between 
+automatic & parent submitting absence, teachers should spend almost no time on Attendance.
+
+![screenshot](teacherView.png)
+
+
+
 ### INSTALL
 -------
 Copy the `ParentAttendance/` folder (if named `ParentAttendance-master`, rename it) and its content inside the `modules/` folder of RosarioSIS.
