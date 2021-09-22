@@ -2,7 +2,8 @@
 
 //NEED a BIG FAT IF to say if your not a parent this wont work for you.
 
-
+if(User( 'PROFILE' ) === 'parent'){
+	//This is a parent ONLY Module.....
 $students_RET = DBGet( "SELECT sju.STUDENT_ID,
 				" . DisplayNameSQL( 's' ) . " AS FULL_NAME,se.SCHOOL_ID
 				FROM STUDENTS s,STUDENTS_JOIN_USERS sju,STUDENT_ENROLLMENT se,SCHOOLS sch
@@ -329,7 +330,10 @@ The purpose of this Basic Education Circular (BEC) is to provide an overview of 
 
 echo ('</form>');
 //echo('<pre>' . print_r($calendarDays_RET,true) . '</pre>');
-
+} //PARENT IF is OVER.....
+else{
+	echo('<h2>This module is a Parent only Module. Use Adminstrator Take Absence or Teacher Absent Forms');
+}
 
 //Pretty up the hours into a nice time format
 
